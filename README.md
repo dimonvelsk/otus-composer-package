@@ -17,5 +17,5 @@ $ composer require dimonvelsk/otus-composer-package
 ````php
 <?php
 $time = new Timer();
-echo $time->getSeconds();
+echo $time->getResult();
 ````

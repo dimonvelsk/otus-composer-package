@@ -16,8 +16,6 @@ class Timer
     public function getResult(): string
     {
         $timeFact = new \DateTimeImmutable('now');
-        $diff = $timeFact->diff($this->timer);
-
-        return $diff->format('%S seconds');
+        return $timeFact->diff($this->timer)->format('%S seconds');
     }
 }
